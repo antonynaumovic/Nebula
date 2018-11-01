@@ -1,6 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
-@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
-@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
+@font-face {
+  font-family: 'WebFontOutline';
+  src: url("../font/OutlineMajor.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'WebFont';
+  src: url("../font/Major.ttf") format("truetype"); }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -212,6 +217,14 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #ff5e00 5px solid; }
+
+@font-face {
+  font-family: 'WebFontOutline';
+  src: url("../font/OutlineMajor.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'WebFont';
+  src: url("../font/Major.ttf") format("truetype"); }
 
 @media screen and (max-width: 768px) {
   main {
