@@ -107,7 +107,7 @@ body {
   font-family: 'WebFont', sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("../img/Foregound.png");
+    background: url("../img/Foreground.jpg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
