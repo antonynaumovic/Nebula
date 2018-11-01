@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Nebula eSports",
   "main": "index.js",
+  "homepage": "https://antonynaumovic.github.io/NebulaWebsite/",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Antony Naumovic",
   "license": "MIT",
