@@ -13,7 +13,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut();
     }
 
@@ -63,7 +63,7 @@
     &-nav{
         margin: 0;
         padding: 0;
-        background: rgba(darken($primary-color, 5), 0.5);
+        background: rgba(darken($primary-color, 5), 0.8);
         list-style: none;
         transform: translate3d(100%, 0,0);
         @include easeOut();
@@ -76,18 +76,17 @@
     &-branding{
         
         background: rgba($primary-color, 0.5);
-        @include easeOut();
         transform: translate3d(-100%, 0,0);
+        @include easeOut();
 
         &.show{
             transform: translate3d(0,0,0);
-            
         }
 
         .portrait{
             width: 550px;
             height: 550px;
-            background: url('/dist/img/OrangeCrop.png');
+            background: url('/dist/img/OrangeCrop.png') center;
             background-size: contain;
             background-repeat: no-repeat;
             opacity: 1;
@@ -113,7 +112,7 @@
         font-size: 30px;
         padding: 1rem 0;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut();
 

@@ -1,36 +1,57 @@
 @import "_menu.scss";
 @import "_config.scss";
 
+
+@font-face{
+    font-family: 'WebFontOutline';
+    src: url('/dist/font/OutlineMajor.ttf')
+    format('truetype');
+}
+
+@font-face{
+    font-family: 'WebFont';
+    src: url('/dist/font/Major.ttf')
+    format('truetype');
+}
+
+
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
+    padding: 0;
     @include background();
     background: $primary-color;
     color: #fff;
     height: 100%;
     margin: 0;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'WebFont', sans-serif;
     line-height: 1.5;
 }
 
 h1, h2, h3{
+    padding: 0;
     margin: 0; 
     font-weight: 400;
 
     &.lg-heading{
+        font-family: 'WebFontOutline', sans-serif;
         font-size: 6rem;
+        
     }
 
     &.sm-heading{
-        margin-bottom: 2rem;
+        margin-bottom: rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color , 2), 0.2);
     }
 }
 
 a {
+    
     color: #fff;
     text-decoration: none;
 }
@@ -64,8 +85,107 @@ main{
 
     &#home{
         overflow: hidden;
+        padding: 0;
         h1{
-            margin-top: 5vh;
+            margin-top: 0vh;
+            
         }
     }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 6fr 3fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "nebMain neb1" "nebMain neb2" "nebMain neb3";
+        
+      }
+
+      .nebImg{
+          padding: 0;
+          width: 30vw;
+      }
+
+    .nebMain { grid-area: nebMain; }
+
+    .neb1 { grid-area: neb1; 
+        padding: 0;
+
+        &:hover{
+            transform: scale(1.05);
+            @include easeOut();
+        }
+
+    }
+
+    .neb2 { grid-area: neb2;
+        padding: 0;
+        &:hover{
+            transform: scale(1.05);
+            @include easeOut();
+        }
+    }
+
+    .neb3 { grid-area: neb3; 
+        padding: 0;
+        &:hover{
+            transform: scale(1.05);
+            @include easeOut();
+        }
+    }
+    .mainImg{
+        width: 65vw;
+
+    }
+    .discordWidget{
+        align-content: center;
+        display: block;
+        width: 40vw;
+        height: 40vh;
+    }
 }
+
+
+
+
+.tournament-info{
+    display: grid;
+
+    grid-gap: 30px;
+
+    grid-template-areas: 
+    'tournament-image tourn tourn'
+    'job1 job2 job3';
+
+    grid-template-columns: repeat(3, 1fr);
+
+    .tournament-image{
+        grid-area: tournament-image;
+        margin: auto;
+        width: 20vw;
+    }
+    
+    .tourn{
+        grid-area: tourn;
+        font-size: 1.5rem;
+    }
+    
+    .job1{
+        grid-area: job1;
+    }
+    
+    .job2{
+        grid-area: job2;
+    }
+    
+    .job3{
+        grid-area: job3;
+    }
+    
+    .job{
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+}
+
+@import "_mobile.scss";
