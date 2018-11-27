@@ -262,7 +262,7 @@ main {
     main .nebMain {
       grid-area: nebMain; } }
 
-@media screen and (min-width: 769px) and (max-width: 1600px) {
+@media screen and (min-width: 1101px) and (max-width: 1600px) {
   main {
     align-items: center;
     text-align: center; }
