@@ -148,7 +148,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #ff5e00; }
+  color: #e60500; }
 
 main {
   padding: 4rem;
@@ -232,7 +232,7 @@ main {
   .tournament-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #ff5e00 5px solid; }
+    border-bottom: #e60500 5px solid; }
 
 @font-face {
   font-family: 'WebFontOutline';
