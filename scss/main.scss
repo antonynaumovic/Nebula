@@ -1,20 +1,6 @@
 @import "_menu.scss";
 @import "_config.scss";
 
-
-@font-face{
-    font-family: 'WebFontOutline';
-    src: url('../dist/font/OutlineMajor.ttf')
-    format('truetype');
-}
-
-@font-face{
-    font-family: 'WebFont';
-    src: url('../dist/font/Major.ttf')
-    format('truetype');
-}
-
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -28,9 +14,10 @@ body{
     color: #fff;
     height: 100%;
     margin: 0;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'WebFont', sans-serif;
     line-height: 1.5;
 }
+
 
 h1, h2, h3{
     padding: 0;
@@ -38,15 +25,25 @@ h1, h2, h3{
     font-weight: 400;
 
     &.lg-heading{
-        font-family: 'Julius Sans One', sans-serif;
+        font-family: 'WebfontOutline', sans-serif;
         font-size: 6rem;
-        
+
     }
 
     &.sm-heading{
         margin-bottom: rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color , 2), 0.2);
+    }
+
+    img{
+        position: relative;
+        width: 5rem;
+
+        float: left;
+        padding: 0;
+        margin: 15px; 
+        
     }
 }
 
@@ -69,10 +66,12 @@ header{
 main{
     padding: 4rem;
     height: 100%;
-
     .icons{
+        position: fixed;
+        align-content: center;
         margin-top: 1rem;
-        
+        padding: 10px;
+        bottom:0;
         a{
             padding: 0.4rem;
 
@@ -80,6 +79,10 @@ main{
                 color:$secondary-color;
                 @include easeOut();
             }
+        }
+        .logoMain{
+            width: 3rem;
+            align-content: center;        
         }
     }
 
@@ -93,11 +96,13 @@ main{
     }
 
     .grid-container {
+        margin-top: 2vh;
+        margin-left: 1vw;
         display: grid;
         grid-template-columns: 6fr 3fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "nebMain neb1" "nebMain neb2" "nebMain neb3";
-        
+        grid-gap: 0px;
       }
 
       .nebImg{

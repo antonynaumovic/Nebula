@@ -1,6 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
-@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
-@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
+@font-face {
+  font-family: 'WebFontOutline';
+  src: url("../font/OutlineMajor.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'WebFont';
+  src: url("../font/Major.ttf") format("truetype"); }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -82,11 +87,11 @@
 
 @font-face {
   font-family: 'WebFontOutline';
-  src: url("../dist/font/OutlineMajor.ttf") format("truetype"); }
+  src: url("../font/OutlineMajor.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'WebFont';
-  src: url("../dist/font/Major.ttf") format("truetype"); }
+  src: url("../font/Major.ttf") format("truetype"); }
 
 * {
   box-sizing: border-box;
@@ -99,10 +104,10 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'WebFont', sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("../img/Foregound.png");
+    background: url("../img/Foreground.jpg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -120,12 +125,18 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'WebfontOutline', sans-serif;
     font-size: 6rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.2); }
+  h1 img, h2 img, h3 img {
+    position: relative;
+    width: 5rem;
+    float: left;
+    padding: 0;
+    margin: 15px; }
 
 a {
   color: #fff;
@@ -143,22 +154,32 @@ main {
   padding: 4rem;
   height: 100%; }
   main .icons {
-    margin-top: 1rem; }
+    position: fixed;
+    align-content: center;
+    margin-top: 1rem;
+    padding: 10px;
+    bottom: 0; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #ff5e00;
         transition: all 0.3s ease-out; }
+    main .icons .logoMain {
+      width: 3rem;
+      align-content: center; }
   main#home {
     overflow: hidden;
     padding: 0; }
     main#home h1 {
       margin-top: 0vh; }
   main .grid-container {
+    margin-top: 2vh;
+    margin-left: 1vw;
     display: grid;
     grid-template-columns: 6fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "nebMain neb1" "nebMain neb2" "nebMain neb3"; }
+    grid-template-areas: "nebMain neb1" "nebMain neb2" "nebMain neb3";
+    grid-gap: 0px; }
   main .nebImg {
     padding: 0;
     width: 30vw; }
@@ -193,7 +214,7 @@ main {
 .tournament-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'tournament-image tourn tourn' 'job1 job2 job3';
+  grid-template-areas: 'tournament-image tourn tourn' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .tournament-info .tournament-image {
     grid-area: tournament-image;
@@ -213,7 +234,56 @@ main {
     padding: 0.5rem;
     border-bottom: #ff5e00 5px solid; }
 
-@media screen and (max-width: 768px) {
+@font-face {
+  font-family: 'WebFontOutline';
+  src: url("../font/OutlineMajor.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'WebFont';
+  src: url("../font/Major.ttf") format("truetype"); }
+
+@media screen and (min-width: 2560px) {
+  main {
+    position: fixed;
+    padding: 4rem;
+    height: 100%; }
+    main .grid-container {
+      display: grid;
+      grid-template-columns: 5fr 5fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "nebMain neb1" "nebMain neb2" "nebMain neb3";
+      grid-gap: 0px;
+      height: 100vh; }
+    main .nebImg {
+      position: relative;
+      padding: 0;
+      height: 30vh;
+      width: 70vh; }
+    main .nebMain {
+      grid-area: nebMain; } }
+
+@media screen and (min-width: 1101px) and (max-width: 1600px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .grid-container {
+      display: grid;
+      grid-template-areas: "nebMain nebMain nebMain" "neb1 neb2 neb3";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 0; }
+    main .icons {
+      position: relative;
+      align-content: center; }
+    main .mainImg {
+      grid-area: nebMain;
+      padding: 0;
+      width: 100vw; }
+    main .nebImg {
+      padding: 0;
+      width: 33vw; } }
+
+@media screen and (max-width: 1100px) {
   main {
     align-items: center;
     text-align: center; }
@@ -223,13 +293,17 @@ main {
       font-size: 3rem; }
     main .grid-container {
       display: grid;
-      grid-template-areas: "nebMain"  "neb1"  "neb2"  "neb3";
-      grid-template-columns: 1fr; }
+      grid-template-areas: "nebMain"  "neb1"  "neb2"  "neb3";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; }
     main .nebImg {
       padding: 0;
       width: 90vw; }
     main .mainImg {
       width: 90vw; }
+    main .icons {
+      position: relative;
+      align-content: center; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -246,9 +320,11 @@ main {
     height: 10vh;
     transform: translate3d(100%, 0, 0); }
   .tournament-info {
-    grid-template-areas: 'tournament-image' 'tourn' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-areas: 'tournament-image' 'tourn' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  h1 img {
+    width: 4rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 1vh; } }

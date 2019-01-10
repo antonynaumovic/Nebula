@@ -1,18 +1,69 @@
 @import "_config.scss";
 
 @include mediaXl() {
+  main{
+
+    position: fixed;
+    padding: 4rem;
+    height: 100%;
     
+    .grid-container {
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "nebMain neb1" "nebMain neb2" "nebMain neb3";
+        grid-gap: 0px;
+        height: 100vh;
+      }
+
+      .nebImg{
+        position: relative;
+        padding: 0;
+        height: 30vh;
+        width: 70vh;
+      }
+
+    .nebMain { grid-area: nebMain; }
+
+  }
 }
 
 @include mediaLg() {
+  
+  main{
 
+    align-items: center;
+    text-align: center;
+    .grid-container{
+      display: grid;
+      grid-template-areas: 
+      "nebMain nebMain nebMain"
+      "neb1 neb2 neb3";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 0;
+    }
+    .icons{
+      position: relative;
+      align-content: center;
+    }
+    .mainImg{
+          grid-area: nebMain;
+          padding: 0;
+          width: 100vw;
+      }
+    .nebImg{
+          padding: 0;
+          width: 33vw;
+      }
+  }
 }
 
 @include mediaMd() {
     main {
         align-items: center;
         text-align: center;
-    
+        
         .lg-heading {
           line-height: 1;
           margin-bottom: 1rem;
@@ -26,7 +77,7 @@
           "neb2" 
           "neb3";
           grid-template-columns: 1fr;
-
+          grid-template-rows: 1fr;
         }
         .nebImg{
           padding: 0;
@@ -34,8 +85,13 @@
       }
       .mainImg{
         width: 90vw;
+      }
+        .icons{
+          position: relative;
+          align-content: center;
+        }
 
-    }
+
     }
     
       ul.menu-nav,
@@ -70,11 +126,16 @@
 
         grid-template-columns: 1fr;
       }
+      h1{
+        img{
+          width: 4rem;
+        }
+      }
 }    
 
 @include mediaSm() {
 
     main#home h1{
-        margin-top: 10vh;
+        margin-top: 1vh;
     }
 }

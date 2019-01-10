@@ -1,16 +1,29 @@
 $primary-color: #444;
 $secondary-color: rgb(255, 94, 0);
 $show-home-image: true;
-$home-image: url('../img/Foregound.png');
+$home-image: url('../img/Foreground.jpg');
 $background-opacity: 0.1;
 
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+//@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
+@font-face{
+    font-family: 'WebFontOutline';
+    src: url('../font/OutlineMajor.ttf')
+    format('truetype');
+}
+
+@font-face{
+    font-family: 'WebFont';
+    src: url('../font/Major.ttf')
+    format('truetype');
+}
+
 
 @mixin easeOut {
     transition: all 0.3s ease-out;
 }
 @mixin easeIn {
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease-out ease-in;
 }
 
 @mixin background {
@@ -43,7 +56,6 @@ $background-opacity: 0.1;
     {
         @return #fff;
     }
-
 }
 
 
@@ -53,17 +65,17 @@ $background-opacity: 0.1;
     }
 }
 @mixin mediaMd {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1100px) {
         @content;
     }
 }
 @mixin mediaLg {
-    @media screen and (mix-width: 769px) and (max-width: 1170px) {
+    @media screen and (min-width: 1101px) and (max-width: 1600px) {
         @content;
     }
 }
 @mixin mediaXl {
-    @media screen and (min-width: 1171px) {
+    @media screen and (min-width: 2560px) {
         @content;
     }
 }
