@@ -47,7 +47,7 @@ h1, h2, h3{
     }
 }
 
-a {
+a{
     
     color: #fff;
     text-decoration: none;
@@ -148,7 +148,18 @@ main{
         height: 40vh;
     }
 }
-
+.widget{
+            height: auto;
+            width: 90%;
+            position: relative;
+            border-radius: 0px;
+            
+}
+iframe{
+    height: 50vh;
+    width: 90%;
+    border-radius: 0px;
+}
 
 .boxes{
     display: flex;
