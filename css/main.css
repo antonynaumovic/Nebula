@@ -190,7 +190,7 @@ main {
     padding: 0; }
     main .neb1:hover {
       transform: scale(1.05);
-      transition: all 0.3s ease-out; }
+      transition: all 0.3s ease-in; }
   main .neb2 {
     grid-area: neb2;
     padding: 0; }
