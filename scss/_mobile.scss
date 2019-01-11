@@ -177,15 +177,15 @@
         }
 
         .sm-heading{
-          display: flex
+          display: none;
+          visibility: hidden;
                 }
       .boxes{
         display: inline;
-        text-overflow: clip;
         word-wrap: break-word;
 
         div{
-          font-size: 1rem
+          width: 100%
         }
       }
       .widget{
