@@ -392,8 +392,6 @@ iframe {
   #contact .boxes {
     display: inline;
     word-wrap: break-word; }
-    #contact .boxes div {
-      width: 100%; }
   #contact .widget {
     width: 80vw;
     height: 20vh; } }
