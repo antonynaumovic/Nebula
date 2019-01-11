@@ -337,6 +337,14 @@ iframe {
     main .icons {
       position: relative;
       align-content: center; }
+  .tournament-info {
+    padding: 0; }
+    .tournament-info .lg-heading {
+      font-size: 1rem; }
+    .tournament-info .tourn {
+      font-size: 1rem; }
+    .tournament-info .job {
+      font-size: 1rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
