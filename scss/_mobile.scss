@@ -92,16 +92,30 @@
         }
     }
     
-    .tournament-info{
+    h1{
+      &.lg-heading{
       padding: 0;
-      .lg-heading{
-        font-size: 1rem;
+      font-size: 70%vw;
+      }
+    }
+
+    .tournament-info{
+
+     display: grid;
+
+      margin: 0;
+      grid-gap: 5px;
+      padding: 0;
+      &.lg-heading{
+        font-size: 0.5rem;
       }
       .tourn{
         font-size: 1rem;
       }
       .job{
         font-size: 1rem;
+        padding: 0;
+        width: 80vw;
       }
     }
 
