@@ -99,6 +99,14 @@
       }
     }
 
+  #contact{
+    width: 100vw;
+    align-content: center;
+    img{
+      width: 0;
+    }
+  }
+
     main{
       border-top: 5px;
       padding: 5px;
@@ -162,9 +170,17 @@
         }
       }
       .boxes{
+        margin: 0;
+        width: 80vw;
+        align-content: center;
+        align-items: center;
         div{
           font-size: 1rem;
+          
         }
+      }
+      .widget{
+        width: 80vw;
       }
 }    
 

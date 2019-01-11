@@ -340,6 +340,11 @@ iframe {
   h1.lg-heading {
     padding: 0;
     font-size: 7vw; }
+  #contact {
+    width: 100vw;
+    align-content: center; }
+    #contact img {
+      width: 0; }
   main {
     border-top: 5px;
     padding: 5px;
@@ -379,8 +384,15 @@ iframe {
     grid-template-columns: 1fr; }
   h1 img {
     width: 4rem; }
-  .boxes div {
-    font-size: 1rem; } }
+  .boxes {
+    margin: 0;
+    width: 80vw;
+    align-content: center;
+    align-items: center; }
+    .boxes div {
+      font-size: 1rem; }
+  .widget {
+    width: 80vw; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
