@@ -99,23 +99,28 @@
       }
     }
 
+    main{
+      border-top: 5px;
+      padding: 5px;
+      align-content: center;
+    }
+
     .tournament-info{
-
+      align-content: center;
      display: grid;
-
+      border: 0;
       margin: 0;
       grid-gap: 5px;
       padding: 0;
-      &.lg-heading{
-        font-size: 0.5rem;
-      }
       .tourn{
         font-size: 1rem;
+        align-content: center;
       }
       .job{
+        align-content: center;
         font-size: 1rem;
         padding: 0;
-        width: 80vw;
+        width: 100vw;
       }
     }
 
