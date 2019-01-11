@@ -390,7 +390,8 @@ iframe {
     display: none;
     visibility: hidden; }
   #contact .boxes {
-    display: inline;
+    width: 80vw;
+    display: block;
     word-wrap: break-word; }
   #contact .widget {
     width: 80vw;
