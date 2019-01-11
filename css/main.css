@@ -337,14 +337,22 @@ iframe {
     main .icons {
       position: relative;
       align-content: center; }
+  h1.lg-heading {
+    padding: 0;
+    font-size: 70%vw; }
   .tournament-info {
+    display: grid;
+    margin: 0;
+    grid-gap: 5px;
     padding: 0; }
-    .tournament-info .lg-heading {
-      font-size: 1rem; }
+    .tournament-info.lg-heading {
+      font-size: 0.5rem; }
     .tournament-info .tourn {
       font-size: 1rem; }
     .tournament-info .job {
-      font-size: 1rem; }
+      font-size: 1rem;
+      padding: 0;
+      width: 80vw; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
