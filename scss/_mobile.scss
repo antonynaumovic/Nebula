@@ -90,10 +90,21 @@
           position: relative;
           align-content: center;
         }
-
-
     }
     
+    .tournament-info{
+      padding: 0;
+      .lg-heading{
+        font-size: 1rem;
+      }
+      .tourn{
+        font-size: 1rem;
+      }
+      .job{
+        font-size: 1rem;
+      }
+    }
+
       ul.menu-nav,
       div.menu-branding {
         float: none;
