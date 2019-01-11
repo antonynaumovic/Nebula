@@ -405,8 +405,6 @@ iframe {
       display: none;
       visibility: hidden; }
   #contact .icons {
-    position: absolute;
-    bottom: 0;
     align-content: center; }
   #contact .sm-heading {
     display: none;
