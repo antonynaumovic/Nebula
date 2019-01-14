@@ -236,8 +236,7 @@ iframe {
     transition: all 0.3s ease-out; }
     .boxes div:hover {
       padding: 2.5rem 3rem;
-      background: #ff5e00;
-      color: #000; }
+      background: #ff5e00; }
       .boxes div:hover span {
         color: #000; }
 
