@@ -219,6 +219,7 @@ iframe{
     .job1{
         
         grid-area: job1;
+        
     }
     
     .job2{
@@ -235,6 +236,9 @@ iframe{
         background: lighten($primary-color, 5);
         padding: 1rem;
         border-bottom: $tertiary-color 5px solid;
+        a{
+            color: $secondary-color;
+        }
     }
 }
 

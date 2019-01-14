@@ -266,6 +266,8 @@ iframe {
     background: #515151;
     padding: 1rem;
     border-bottom: #ff3300 5px solid; }
+    .tournament-info .job a {
+      color: #ff5e00; }
 
 @font-face {
   font-family: 'WebFontOutline';
